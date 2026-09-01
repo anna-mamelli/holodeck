@@ -1,0 +1,25 @@
+
+# MariaDB Server
+# To use a different major version of the server, or to pin to a specific minor version, change URI below.
+X-Repolib-Name: MariaDB Server
+Enabled: yes
+Types: deb
+URIs: https://dlm.mariadb.com/repo/mariadb-server/12.rolling/repo/debian
+Suites: trixie
+Components: main
+Architectures: amd64 arm64
+Signed-By: /etc/apt/keyrings/mariadb-keyring.gpg
+
+
+# MariaDB MaxScale
+# To use the latest stable release of MaxScale, use "latest" as the version
+# To use the latest beta (or stable if no current beta) release of MaxScale, use "beta" as the version
+X-Repolib-Name: MariaDB MaxScale
+Enabled: yes
+Types: deb
+URIs: https://dlm.mariadb.com/repo/maxscale/latest/apt
+Suites: trixie
+Components: main
+Architectures: amd64 arm64
+Signed-By: /etc/apt/keyrings/mariadb-keyring.gpg
+

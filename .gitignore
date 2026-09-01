@@ -1,0 +1,8 @@
+﻿*.key
+*.crt
+*.csr
+*.pem
+*.ova
+*.vmdk
+*.iso
+*.sql

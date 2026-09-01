@@ -1,0 +1,13 @@
+[req]
+prompt = no
+distinguished_name = dn
+req_extensions = v3_req
+[dn]
+C  = FR
+O  = Starfleet
+CN = starfleet.lan
+[v3_req]
+subjectAltName = @alt
+[alt]
+DNS.1 = starfleet.lan
+DNS.2 = *.starfleet.lan
