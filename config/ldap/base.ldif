@@ -1,0 +1,17 @@
+dn: ou=users,dc=starfleet,dc=lan
+objectClass: organizationalUnit
+ou: users
+
+dn: uid=natalia,ou=users,dc=starfleet,dc=lan
+objectClass: inetOrgPerson
+cn: Natalia
+sn: Natalia
+uid: natalia
+mail: natalia@starfleet.lan
+
+dn: uid=benahmed,ou=users,dc=starfleet,dc=lan
+objectClass: inetOrgPerson
+cn: Ben Ahmed
+sn: Ben Ahmed
+uid: benahmed
+mail: benahmed@starfleet.lan
