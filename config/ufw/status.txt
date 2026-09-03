@@ -1,19 +1,19 @@
 Status: active
+Logging: on (low)
+Default: deny (incoming), allow (outgoing), disabled (routed)
+New profiles: skip
 
-     To                         Action      From
-     --                         ------      ----
-[ 1] 67/udp on ens37            ALLOW IN    Anywhere                   # DHCP
-[ 2] 53 on ens37                ALLOW IN    Anywhere                   # DNS
-[ 3] 22/tcp on ens37            ALLOW IN    Anywhere                   # SSH
-[ 4] 22/tcp on ens33            ALLOW IN    Anywhere                   # SSH admin PC - TEMPORAIRE retirer avant rendu
-[ 5] 80,443/tcp on ens37        ALLOW IN    Anywhere                   # HTTP HTTPS
-[ 6] 21/tcp on ens37            ALLOW IN    Anywhere                   # FTP
-[ 7] 40000:40100/tcp on ens37   ALLOW IN    Anywhere                   # FTP passif
-[ 8] 67/udp (v6) on ens37       ALLOW IN    Anywhere (v6)              # DHCP
-[ 9] 53 (v6) on ens37           ALLOW IN    Anywhere (v6)              # DNS
-[10] 22/tcp (v6) on ens37       ALLOW IN    Anywhere (v6)              # SSH
-[11] 22/tcp (v6) on ens33       ALLOW IN    Anywhere (v6)              # SSH admin PC - TEMPORAIRE retirer avant rendu
-[12] 80,443/tcp (v6) on ens37   ALLOW IN    Anywhere (v6)              # HTTP HTTPS
-[13] 21/tcp (v6) on ens37       ALLOW IN    Anywhere (v6)              # FTP
-[14] 40000:40100/tcp (v6) on ens37 ALLOW IN    Anywhere (v6)              # FTP passif
-
+To                         Action      From
+--                         ------      ----
+67/udp on ens37            ALLOW IN    Anywhere                   # DHCP
+53 on ens37                ALLOW IN    Anywhere                   # DNS
+22/tcp on ens37            ALLOW IN    Anywhere                   # SSH
+80,443/tcp on ens37        ALLOW IN    Anywhere                   # HTTP HTTPS
+21/tcp on ens37            ALLOW IN    Anywhere                   # FTP
+40000:40100/tcp on ens37   ALLOW IN    Anywhere                   # FTP passif
+67/udp (v6) on ens37       ALLOW IN    Anywhere (v6)              # DHCP
+53 (v6) on ens37           ALLOW IN    Anywhere (v6)              # DNS
+22/tcp (v6) on ens37       ALLOW IN    Anywhere (v6)              # SSH
+80,443/tcp (v6) on ens37   ALLOW IN    Anywhere (v6)              # HTTP HTTPS
+21/tcp (v6) on ens37       ALLOW IN    Anywhere (v6)              # FTP
+40000:40100/tcp (v6) on ens37 ALLOW IN    Anywhere (v6)              # FTP passif
